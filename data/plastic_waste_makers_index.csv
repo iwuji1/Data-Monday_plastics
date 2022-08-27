@@ -1,0 +1,101 @@
+rank,polymer_producer,no_of_assets,production_of_in_scope_polymers,flexible_format_contribution_to_sup_waste,rigid_format_contribution_to_sup_waste,total_contribution_to_sup_waste
+1,ExxonMobil,55,11.2,4.7,1.2,5.9
+2,Dow,54,9.3,4.7,0.9,5.6
+3,Sinopec,82,11.6,4,1.3,5.3
+4,Indorama Ventures,26,5.1,0.2,4.5,4.6
+5,Saudi Aramco,53,9.5,3.2,1.1,4.3
+6,PetroChina,62,8.8,3.3,0.8,4
+7,LyondellBasell,69,9.3,2.1,1.8,3.9
+8,Reliance Industries,26,5.5,1.8,1.3,3.1
+9,Braskem,40,6.7,1.9,1.1,3
+10,Alpek SA de CV,12,2.5,0,2.3,2.3
+11,Borealis,29,5,1.5,0.7,2.2
+12,Lotte Chemical,24,4.1,1.1,1,2.1
+13,INEOS,28,4.8,1,1,2
+14,Total,34,4.5,1,0.9,1.9
+15,Jiangsu Hailun Petrochemical,1,1.7,0,1.6,1.6
+16,Far Eastern New Century,7,1.6,0,1.6,1.6
+17,Formosa Plastics Corporation,22,3.6,1,0.6,1.6
+18,China Energy Investment Group,12,3.4,1.2,0.3,1.5
+19,PTT,17,3.1,1.1,0.3,1.5
+20,China Resources,4,1.4,0,1.3,1.3
+21,Nova Chemicals Corporation,8,1.9,1,0.2,1.2
+22,Siam Cement Group,12,2.4,0.9,0.3,1.1
+23,Phillips 66,27,2.4,0.6,0.5,1
+24,Zhejiang Wankai,4,1,0,1,1
+25,Sumitomo Chemical,17,2,0.7,0.3,1
+26,Jiangyin Chengxing Industrial Group,7,1,0,0.9,0.9
+27,Chevron Corporation,21,2.2,0.5,0.4,0.9
+28,Hanwha Chemical,18,1.6,0.7,0.2,0.9
+29,China Coal,7,1.8,0.7,0.1,0.8
+30,Rongsheng Group,9,1.2,0.2,0.7,0.8
+31,Mitsubishi Chemical Corporation,20,1.7,0.5,0.4,0.8
+32,SIBUR,13,1.3,0.4,0.4,0.8
+33,Abu Dhabi National Oil Company,10,1.9,0.6,0.2,0.8
+34,GAIL India,14,1.6,0.6,0.1,0.7
+35,LG Chem,7,1.4,0.5,0.2,0.7
+36,Westlake Chemical Corporation,10,1,0.5,0.1,0.6
+37,Mitsui Chemicals,17,1.1,0.2,0.4,0.6
+38,Sasol,5,1.2,0.5,0.1,0.6
+39,Zhejiang Hengyi Group,2,0.6,0,0.6,0.6
+40,Eni,8,1,0.5,0.1,0.6
+41,Yanchang Group,7,1.5,0.4,0.1,0.6
+42,Repsol,12,1.1,0.4,0.2,0.6
+43,Indian Oil Corporation,6,1.2,0.5,0.1,0.6
+44,Nan Ya Plastics Coporation,2,0.5,0,0.5,0.5
+45,SK Innovation Co,10,1.1,0.4,0.1,0.5
+46,Oil and Natural Gas Corporation,1,1.2,0.4,0.1,0.5
+47,Octal,6,0.6,0,0.5,0.5
+48,JBF Industries,3,0.5,0,0.5,0.5
+49,MOL Hungarian Oil and Gas,7,1.1,0.3,0.2,0.5
+50,Bakhtar Petrochemical,6,1,0.4,0.1,0.5
+51,Shell,14,1,0.3,0.1,0.4
+52,Neo Group,1,0.4,0,0.4,0.4
+53,Haldia Petrochemicals Ltd,5,0.9,0.3,0.1,0.4
+54,China National Offshore Oil Corporation,6,0.8,0.3,0.1,0.4
+55,Tasnee,2,0.9,0.3,0.1,0.4
+56,Eastern Petrochemical Company,6,0.7,0.3,0,0.4
+57,Qatar Petroleum,0,0.6,0.3,0.1,0.4
+58,Shinkong,16,0.4,0,0.4,0.4
+59,Sahara International Petrochemical,4,0.8,0.2,0.1,0.3
+60,Air Liquide,4,0.7,0.3,0.1,0.3
+61,Formosa Chemicals & Fibre Corporation,6,0.6,0.1,0.2,0.3
+62,Korea Petrochemical Industrial,1,0.9,0.2,0.1,0.3
+63,Gatron Industries,5,0.4,0,0.3,0.3
+64,Equate Petrochemical Company,6,0.6,0.1,0.2,0.3
+65,Baofeng,3,0.7,0.2,0.1,0.3
+66,National Petrochemical Company (Saudi Arabia),8,1,0.2,0.1,0.3
+67,PT Chandra Asri Petrochemical,6,0.6,0.2,0.1,0.3
+68,PKN Orlen,2,0.8,0.1,0.2,0.3
+69,Dhunseri Petrochem,4,0.3,0,0.3,0.3
+70,Bazan Group,7,0.7,0.2,0.1,0.3
+71,Daelim Group,3,0.7,0.2,0.1,0.3
+72,KAP Industrial Holdings,7,0.5,0,0.2,0.3
+73,Petroleos Mexicanos,3,0.5,0.2,0.1,0.3
+74,Pucheng Clean Energy,4,0.6,0.2,0.1,0.3
+75,Qatar Petrochemical Company,1,0.4,0.2,0,0.3
+76,TK Chemical,3,0.3,0,0.3,0.3
+77,Saudi Kayan,2,0.7,0.2,0.1,0.3
+78,Oriental Energy,4,0.7,0.2,0.1,0.3
+79,Jam Petrochemical Company,3,0.7,0.2,0.1,0.3
+80,Nizhnekamskneftekhim,2,0.4,0.2,0,0.3
+81,Prime Polymer,3,0.4,0.3,0,0.3
+82,Yansab,5,0.6,0.2,0,0.3
+83,Petronas,4,0.5,0.2,0.1,0.2
+84,Amir Kabir Petrochemical Company,7,0.5,0.2,0,0.2
+85,State Oil Company of Azerbaijan Republic,1,0.5,0.2,0.1,0.2
+86,Henan Coal Chemical Industry Group,2,0.2,0,0.2,0.2
+87,Fude Energy,5,0.6,0.2,0.1,0.2
+88,USI Group,3,0.4,0.2,0,0.2
+89,Ecopetrol,10,0.5,0.1,0.1,0.2
+90,Idemitsu Kosan,6,0.5,0.1,0.1,0.2
+91,Kazanorgsintez,1,0.6,0.2,0.1,0.2
+92,HPCL-Mittal Energy Ltd,1,0.5,0.2,0,0.2
+93,Pan Asia PET Resin,1,0.2,0,0.2,0.2
+94,Koksan,1,0.2,0,0.2,0.2
+95,Novapet,2,0.2,0,0.2,0.2
+96,Xingxing,2,0.5,0.1,0.1,0.2
+97,Sanyuan,4,0.5,0.1,0.1,0.2
+98,North Huajin,4,0.6,0.1,0.1,0.2
+99,Shahid Tondgooian Petrochemical,1,0.2,0,0.2,0.2
+100,Dragon Special Resin,2,0.2,0,0.2,0.2

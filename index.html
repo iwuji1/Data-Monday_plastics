@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body {
+          font-family: Roboto;
+          background-color: #6687E5;
+          color: #ffffed;
+        }
+
+        p {
+          margin-left: 40px;
+          text-align: center;
+          font-size: 20px;
+        }
+        .bar {
+            fill: steelblue;
+          }
+        h1 {
+          text-align: center;
+          color: white;
+
+        }
+
+        hr.rounded {
+          border-top: 8px solid #bbb;
+          border-radius: 10px;
+        }
+
+        #my_dataviz {
+          background-color: #6687E5;
+        }
+
+        text {
+          fill: white;
+          font-size: 14px;
+        }
+
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+  <h1>Data Monday Plastics Challenge</h1>
+  <p>This week's challenge was to redo <a href="https://data.world/makeovermonday/2021w22">this chart</a> trying to show a different story or make it look different</p>
+  <p> I decided to show a different story, I wanted to show which producer is worse in terms of their output per asset as I thought that was a better indicator of their level of performance</p>
+  <p> I think it came out pretty well </p>
+  <h1>Top 20 asset per contribution producers</h1>
+  <hr class="solid">
+<div id="my_dataviz"></div>
+<script>
+
+var margin = {top: 10, right: 30, bottom: 40, left: 400},
+  width = 1000 - margin.left - margin.right,
+  height = 700 - margin.top - margin.bottom;
+
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+          // Parse the Data
+d3.csv("plastics_data.csv", function(data) {
+
+  // Add X axis
+  var x = d3.scaleLinear()
+    .domain([0, 6])
+    .range([ 0, width]);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end");
+
+  // Y axis
+  var y = d3.scaleBand()
+    .range([ 0, height ])
+    .domain(data.map(function(d) { return d.polymer_producer; }))
+    .padding(1);
+  svg.append("g")
+    .call(d3.axisLeft(y))
+
+  //Tooltip
+  var tooltip = d3.select("#my_dataviz")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("position", "absolute")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "1px")
+      .style("border-radius", "5px")
+      .style("padding", "10px")
+
+    // A function that change this tooltip when the user hover a point.
+    // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+  var mouseover = function(d) {
+    tooltip
+      .style("opacity", 1)
+  }
+
+  var mousemove = function(d) {
+    tooltip
+      .html("Total number of assets: " + d.no_of_assets +
+            " Total contribution: " + d.total_contribution_to_sup_waste)
+      .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+      .style("top", (d3.mouse(this)[1]+90) + "px")
+  }
+  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+  var mouseleave = function(d) {
+    tooltip
+      .transition()
+      .duration(200)
+      .style("opacity", 0)
+  }
+
+
+  // Lines
+  svg.selectAll("myline")
+    .data(data)
+    .enter()
+    .append("line")
+      .attr("x1", function(d) { return x(d.asset_contribution_ratio); })
+      .attr("x2", x(0))
+      .attr("y1", function(d) { return y(d.polymer_producer); })
+      .attr("y2", function(d) { return y(d.polymer_producer); })
+      .attr("stroke", "white")
+
+  // Circles
+  svg.selectAll("mycircle")
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("cx", function(d) { return x(d.asset_contribution_ratio); })
+      .attr("cy", function(d) { return y(d.polymer_producer); })
+      .attr("r", "4")
+      .style("fill", "none")
+      .attr("stroke", "white")
+    .on("mouseover", mouseover )
+    .on("mousemove", mousemove )
+    .on("mouseleave", mouseleave )
+})
+
+
+</script>
+</body>
+</html>

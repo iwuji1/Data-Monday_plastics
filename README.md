@@ -6,4 +6,8 @@ I decided to show a different story, I wanted to show which producer is worse in
 
 I think it came out pretty well
 
+To run type:
+
+"NPM run"
+
 Here is the link to the github page: https://iwuji1.github.io/Data-Monday_plastics/
